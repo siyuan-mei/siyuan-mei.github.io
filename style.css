@@ -1,30 +1,25 @@
 :root {
-  /* Color Palette - Vibrant & Premium */
-  --bg-dark: #0a0c10;
-  --bg-glass: rgba(20, 24, 33, 0.7);
-  --bg-card: rgba(30, 36, 48, 0.5);
-  --primary: #4cc9f0;
-  /* Electric Blue */
-  --primary-glow: rgba(76, 201, 240, 0.4);
-  --secondary: #7209b7;
-  /* Deep Purple */
-  --accent: #f72585;
-  /* Neon Pink */
-  --text-main: #e0e6ed;
-  --text-muted: #94a3b8;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --border: rgba(255, 255, 255, 0.1);
-}
-
-.light-mode {
-  --bg-dark: #f8fafc;
-  --bg-glass: rgba(255, 255, 255, 0.8);
-  --bg-card: rgba(255, 255, 255, 0.6);
+  /* Clean Academic Palette */
+  --bg-dark: #ffffff;
+  --bg-alt: #f8fafc;
+  --primary: #2563eb;
+  /* Royal Blue */
   --text-main: #1e293b;
   --text-muted: #64748b;
-  --border: rgba(0, 0, 0, 0.1);
-  --primary: #3b82f6;
+  --border: #e2e8f0;
+  --transition: all 0.2s ease;
 }
+
+.dark-mode {
+  --bg-dark: #0f172a;
+  --bg-alt: #1e293b;
+  --primary: #3b82f6;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: #334155;
+}
+
+/* Light mode is now default with a simple toggle to dark */
 
 * {
   margin: 0;
@@ -71,14 +66,13 @@ h3,
 
 /* Navbar */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(10, 12, 16, 0.8);
-  backdrop-filter: blur(10px);
+  background: var(--bg-dark);
   border-bottom: 1px solid var(--border);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .nav-container {
@@ -130,11 +124,10 @@ h3,
 
 /* Hero Section */
 .hero {
-  padding: 6rem 0 3rem;
+  padding: 3rem 0 1.5rem;
   min-height: auto;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 /* Abstract Background Shapes */
@@ -162,13 +155,12 @@ h3,
 }
 
 .hero-text h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1.2rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
   color: var(--text-main);
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
   display: inline-block;
-  padding-bottom: 0.3rem;
 }
 
 .chinese-name {
@@ -271,19 +263,16 @@ h3,
 
 /* Sections */
 .section {
-  padding: 3rem 0;
-}
-
-.bg-alt {
-  background: none;
+  padding: 1.5rem 0;
 }
 
 .section-title {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  position: relative;
-  display: inline-block;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
   color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .section-title::after {
@@ -379,67 +368,62 @@ h3,
 }
 
 /* Publications Section */
-.publications-list {
+.publications-list-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pub-year-group {
+  position: relative;
+}
+
+.pub-year {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2rem;
+  display: block;
+}
+
+.pub-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
 
-.pub-item {
-  padding: 0;
-  background: none;
-  border: none;
-  box-shadow: none;
-  overflow: visible;
-  display: block;
-}
-
-.pub-type {
-  display: none;
-}
-
-.pub-title {
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
-  color: var(--text-main);
-  font-weight: 600;
-}
-
-.pub-authors {
-  color: var(--text-main);
+.pub-ul li {
   font-size: 0.95rem;
-  margin-bottom: 0.2rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  padding-left: 0;
 }
 
-.pub-authors strong {
-  text-decoration: underline;
+.pub-ul li strong {
+  color: var(--text-main);
 }
 
-.pub-venue {
-  font-weight: 400;
-  font-style: italic;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+.pub-links-mini {
+  margin-left: 0.5rem;
+  display: inline-flex;
+  gap: 0.5rem;
 }
 
-.pub-links {
-  display: flex;
-  gap: 0.8rem;
-}
-
-.pub-links a {
-  text-decoration: none;
+.pub-links-mini a {
   color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
   font-size: 0.85rem;
-  padding: 0;
-  background: none;
-  border: none;
+  transition: var(--transition);
 }
 
-.pub-links a:hover {
+.pub-links-mini a:hover {
   text-decoration: underline;
-  background: none;
 }
 
 .view-more {
@@ -556,19 +540,8 @@ h3,
 
 /* Animations */
 .fade-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  opacity: 1;
+  transform: none;
 }
 
 /* Mobile Responsive */
