@@ -263,16 +263,21 @@ h3,
 
 /* Sections */
 .section {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
 }
 
 .section-title {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .section-title::after {
@@ -283,15 +288,11 @@ h3,
 .news-list {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.6rem;
 }
 
 .news-item {
   padding: 0;
-  background: none;
-  backdrop-filter: none;
-  border: none;
-  box-shadow: none;
   display: list-item;
   list-style-type: none;
   margin-left: 1.2rem;
