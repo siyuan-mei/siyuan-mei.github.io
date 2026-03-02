@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, observerOptions);
 
-  document.querySelectorAll(".glass, .section-title, .timeline-item").forEach((el) => {
+  document.querySelectorAll(".glass, .timeline-item").forEach((el) => {
     el.style.opacity = "0";
     observer.observe(el);
   });
