@@ -261,27 +261,18 @@ h3,
   border-radius: 12px;
 }
 
-/* Sections */
-.section {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.section:last-of-type {
-  border-bottom: none;
-}
-
+/* Section Titles */
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.section-title::after {
-  display: none;
+  letter-spacing: 2px;
+  display: block;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  width: fit-content;
 }
 
 /* News Section */
@@ -368,25 +359,15 @@ h3,
   border-left: 4px solid var(--primary);
 }
 
-/* Sections */
+/* Sections Layout */
 .section {
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   border-bottom: 1px solid var(--border);
   scroll-margin-top: 80px;
 }
 
 .section:last-of-type {
   border-bottom: none;
-}
-
-.section-title {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-  font-weight: 800;
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
 }
 
 /* Pub Listing Styles */
