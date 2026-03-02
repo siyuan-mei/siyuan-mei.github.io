@@ -151,24 +151,57 @@ h3,
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
   color: var(--text-main);
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
 .chinese-name {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 0.8rem;
+}
+
+.bio {
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  color: var(--text-main);
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+.bio p {
+  margin-bottom: 0.8rem;
+}
+
+.bio a {
+  color: var(--primary);
+  text-decoration: none;
   font-weight: 500;
-  margin-left: 1rem;
+  border-bottom: 1px dotted var(--primary);
+  transition: var(--transition);
+}
+
+.bio a:hover {
+  background-color: var(--primary-glow);
+  color: white;
+  border-bottom-style: solid;
 }
 
 .highlight {
@@ -178,60 +211,45 @@ h3,
   -webkit-text-fill-color: transparent;
 }
 
-.bio {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: var(--text-main);
-  max-width: 700px;
-}
-
-.bio p {
-  margin-bottom: 1rem;
-}
-
-.bio a {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: var(--transition);
-}
-
-.bio a:hover {
-  border-bottom: 1px solid var(--primary);
-}
-
 .social-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .social-links a {
   color: var(--text-main);
   text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: var(--transition);
-  background: rgba(255, 255, 255, 0.03);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .social-links a:hover {
-  background: var(--primary);
-  color: #000;
-  border-color: var(--primary);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px var(--primary-glow);
+  opacity: 1;
+  color: var(--primary);
+  transform: translateY(-2px);
+  background: none;
+  box-shadow: none;
+}
+
+.social-links i {
+  font-size: 1.2rem;
 }
 
 .hero-image {
   position: relative;
-  padding: 10px;
-  width: 320px;
-  height: 320px;
-  margin: 0 auto;
+  padding: 5px;
+  width: 220px;
+  height: 220px;
+  margin: 0 0 0 auto;
 }
 
 .hero-image img {
