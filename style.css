@@ -158,30 +158,47 @@ h3,
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
+  color: var(--text-main);
+}
+
+.chinese-name {
+  font-size: 1.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-left: 1rem;
 }
 
 .highlight {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
-  font-weight: 300;
 }
 
 .bio {
   font-size: 1.1rem;
-  margin-bottom: 2.5rem;
-  color: var(--text-muted);
-  max-width: 600px;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+  max-width: 700px;
+}
+
+.bio p {
+  margin-bottom: 1rem;
+}
+
+.bio a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.bio a:hover {
+  border-bottom: 1px solid var(--primary);
 }
 
 .social-links {
@@ -573,8 +590,20 @@ h3,
   }
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-muted {
+  color: var(--text-muted);
 }
 
 .text-center {
