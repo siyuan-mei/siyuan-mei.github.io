@@ -261,15 +261,16 @@ h3,
   border-radius: 12px;
 }
 
-/* Section Titles */
-.section-title {
+/* Main Section Titles */
+.main-section-title {
   font-size: 1.4rem;
   margin-bottom: 1.2rem;
   font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  display: block;
+  display: block !important;
+  visibility: visible !important;
 }
 
 /* News Section */
