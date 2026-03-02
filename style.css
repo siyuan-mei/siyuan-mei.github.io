@@ -372,6 +372,7 @@ h3,
 .section {
   padding: 2.5rem 0;
   border-bottom: 1px solid var(--border);
+  scroll-margin-top: 80px;
 }
 
 .section:last-of-type {
