@@ -263,12 +263,12 @@ h3,
 
 /* Section Titles */
 .section-title {
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
   font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   display: block;
   opacity: 1 !important;
 }
@@ -359,7 +359,7 @@ h3,
 
 /* Sections Layout */
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--border);
   scroll-margin-top: 80px;
 }
@@ -529,18 +529,19 @@ h3,
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
+    gap: 2rem;
   }
 
-  .hero-text h1 {
-    font-size: 2.5rem;
+  .hero-text {
+    width: 100%;
   }
 
   .hero-image {
-    order: -1;
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
   }
 
   .social-links {
