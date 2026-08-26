@@ -1,238 +1,133 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siyuan Mei</title>
+    <meta
+      name="description"
+      content="Academic homepage for Siyuan Mei: medical AI, computer vision, publications, and research."
+    />
+    <link rel="icon" href="assets/img/favicon.svg?v=20260826" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/img/favicon.png?v=20260826" type="image/png" sizes="96x96" />
+    <link rel="stylesheet" href="styles.css?v=20260826-2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siyuan Mei | Academic Homepage</title>
-  <meta name="description"
-    content="Personal academic homepage of Siyuan Mei, Ph.D. student at FAU, specializing in Medical Image Reconstruction and Generative Models." />
-  <link rel="stylesheet" href="style.css?v=4.4" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+    <header class="site-header">
+      <a id="site-name" class="site-name" href="#Home">Siyuan Mei</a>
+      <nav class="nav-list" aria-label="Section navigation">
+        <a href="#Home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#service">Service</a>
+      </nav>
+    </header>
 
-<body class="dark-mode">
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">Siyuan Mei</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#services">Professional Services</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-      </ul>
-      <div class="theme-toggle" id="theme-toggle">
-        <i class="fas fa-moon"></i>
-      </div>
-      <div class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
-
-  <header id="about" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2 class="section-title">About Me</h2>
-          <h1 class="fade-in">Siyuan Mei <span class="chinese-name">梅思远</span></h1>
-          <div class="bio fade-in">
-            <p>
-              Hello! I'm <strong>Siyuan Mei</strong>, a third-year PhD student at
-              <a href="https://www.fau.eu/" target="_blank">Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)</a>,
-              supervised by <a href="https://lme.tf.fau.de/person/maier/" target="_blank">Prof. Andreas Maier</a>.
-              Previously, I received my M.Sc. degree from FAU and my B.Eng. degree from
-              Zhejiang University of Science and Technology.
-            </p>
-
-            <p>
-              I was a member of the ERC-funded project
-              <a href="https://cordis.europa.eu/project/id/810316" target="_blank">"Advancing osteoporosis medicine
-                by observing bone microstructure."</a>. My core research focuses on <strong>machine
-                learning</strong> and
-              <strong>medical imaging</strong>.
-            </p>
-
-            <p>
-              During my PhD, I explore diverse directions, including <strong>image synthesis (Diffusion &
-                GAN)</strong>,
-              <strong>image registration</strong>, <strong>semantic segmentation</strong>, <strong>object
-                detection</strong>, and <strong>representation
-                learning</strong>...
-            </p>
-
-            <p class="mt-2 text-muted">
-              You can contact me at <a href="mailto:siyuan.mei@fau.de">siyuan.mei@fau.de</a> and view my resume
-              <a href="assets/cv_siyuan.pdf" target="_blank">here</a>.
-            </p>
-
-            <p class="mt-2 text-muted italic">Outside of research, I am learning tennis (level of 2.5).</p>
-          </div>
-          <div class="social-links fade-in">
-            <a href="https://scholar.google.com/citations?user=W_xPF2YAAAAJ&hl=en" target="_blank"
-              title="Google Scholar"><i class="fas fa-graduation-cap"></i> Scholar</a>
-            <a href="https://www.linkedin.com/in/siyuan-mei-409353247/" target="_blank" title="LinkedIn"><i
-                class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://orcid.org/0009-0002-1136-2501" target="_blank" title="ORCID"><i class="fab fa-orcid"></i>
-              ORCID</a>
-            <a href="https://lme.tf.fau.de/person/simei/" target="_blank" title="FAU Profile"><i
-                class="fas fa-university"></i> FAU</a>
+    <main id="main" class="content">
+      <section id="Home" class="home-section">
+        <img id="profile-avatar" class="avatar" src="assets/img/profile-photo.jpg" alt="Siyuan Mei" />
+        <div class="home-copy">
+          <h1 id="profile-name">Siyuan Mei</h1>
+          <p class="profile-line">
+            <span id="profile-title"></span>
+            <span class="line-separator"> · </span>
+            <span id="profile-affiliation"></span>
+          </p>
+          <div id="about-content" class="prose"></div>
+          <p id="collaboration-note" class="collaboration-line"></p>
+          <div class="profile-links" aria-label="Profile and contact links">
+            <span id="profile-links"></span>
+            <span class="slash-separator">/</span>
+            <a id="profile-email" class="email-link" href="#"></a>
+            <span class="slash-separator">/</span>
+            <span id="wechat-contact" class="wechat-contact" hidden></span>
           </div>
         </div>
-        <div class="hero-image fade-in">
-          <img src="assets/profile.png" alt="Siyuan Mei" id="profile-img" />
-        </div>
-      </div>
-    </div>
-  </header>
+      </section>
 
-  <section id="news" class="section">
-    <div class="container">
-      <h2 class="section-title">News</h2>
-      <div class="news-list">
-        <div class="news-item">
-          <span class="news-date">Mar 2026</span>
-          <p>We submitted 9 manuscripts to <strong>MICCAI 2026</strong>!</p>
-        </div>
-        <div class="news-item">
-          <span class="news-date">Sep 2025</span>
-          <p>We won the <strong>first place</strong> in <a href="https://synthrad2025.grand-challenge.org/"
-              target="_blank">MICCAI SynthRAD2025 Challenge</a>!</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="research" class="section research-section">
+          <h2>Research Interest</h2>
+          <div id="research-content" class="research-list"></div>
+        </section>
 
-  <section id="services" class="section">
-    <div class="container">
-      <h2 class="section-title">Professional Services</h2>
-      <div class="news-list">
-        <div class="news-item">
-          <p>Invited as a reviewer for <strong>MICCAI 2026</strong>.</p>
-        </div>
-        <div class="news-item">
-          <p>Invited as a <strong>Technical Editor</strong> for the <a
-              href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging" target="_blank">Journal of
-              Medical Imaging (JMI)</a>.</p>
-        </div>
-        <div class="news-item">
-          <p>Invited as a reviewer for <a href="https://www.melba-journal.org/" target="_blank">Journal of
-              Machine Learning for Biomedical Imaging (MELBA)</a> </p>
-        </div>
-      </div>
+        <section id="news" class="section">
+          <h2>News</h2>
+          <div id="news-content" class="timeline"></div>
+        </section>
 
-    </div>
-  </section>
+        <section id="publications" class="section">
+          <div class="section-heading-row">
+            <h2>Selected Publications</h2>
+            <a id="scholar-link" class="subtle-link" href="#" target="_blank" rel="noreferrer">Full list</a>
+          </div>
+          <div id="selected-publications" class="publication-list"></div>
 
-  <section id="publications" class="section">
-    <div class="container">
-      <h2 class="section-title">Selected Publications</h2>
-      <div class="publications-list-compact">
-        <div class="pub-year-group">
-          <h3 class="pub-year">2026</h3>
-          <ul class="pub-ul">
-            <li>
-              <a href="https://doi.org/10.1016/j.bspc.2025.107481" target="_blank" class="pub-title-link">Analyzing and
-                adapting diffusion segmentation behavior for medical images</a><br>
-              M. Öttl, <strong>Siyuan Mei</strong>, F. Fan, M. Gu, J. Wu, A. Maier, et al. <em>BSPC</em>, 2026.
-            </li>
-          </ul>
-        </div>
+          <h3 id="other-publications-title" class="subsection-title">Other Publications</h3>
+          <div id="other-publications" class="compact-publications"></div>
+        </section>
 
-        <div class="pub-year-group">
-          <h3 class="pub-year">2025</h3>
-          <ul class="pub-ul">
-            <li>
-              <a href="https://doi.org/10.1117/1.JMI.12.5.054004" target="_blank" class="pub-title-link">BigReg: an
-                efficient registration
-                pipeline for high-resolution X-ray and light-sheet fluorescence microscopy</a><br>
-              <strong>Siyuan Mei</strong>, F. Fan, M. Thies, M. Gu, F. Wagner, et al. <em>JMI (featured)</em>, 2025.
-            </li>
-            <li>
-              <a href="https://doi.org/10.1088/1361-6560/adbb50" target="_blank" class="pub-title-link">DRACO:
-                differentiable reconstruction for arbitrary CBCT orbits</a><br>
-              C. Ye, L. S. Schneider, Y. Sun, M. Thies, <strong>Siyuan Mei</strong>, A. Maier. <em>PMB</em>, 2025.
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/2410.14442" target="_blank" class="pub-title-link">GANeXt: A Fully
-                ConvNeXt-Enhanced Generative Adversarial Network for MRI-and CBCT-to-CT Synthesis</a><br>
-              <strong>Siyuan Mei</strong>, Y. Xia, F. Fan, et al. <em>arXiv</em>, 2025.
-            </li>
-          </ul>
-        </div>
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <div id="education-content" class="entry-list"></div>
+        </section>
 
-        <div class="pub-year-group">
-          <h3 class="pub-year">2024</h3>
-          <ul class="pub-ul">
-            <li>
-              <a href="https://doi.org/10.1007/978-3-031-72104-5_25" target="_blank"
-                class="pub-title-link">Differentiable Score-Based Likelihoods: Learning CT Motion Compensation from
-                Clean Images</a><br>
-              M. Thies, N. Maul, <strong>Siyuan Mei</strong>, L. Pfaff, N. Vysotskaya, M. Gu, et al. <em>MICCAI</em>,
-              2024.
-            </li>
-            <li>
-              <a href="https://doi.org/10.1007/978-3-031-72114-4_65" target="_blank" class="pub-title-link">Unsupervised
-                Domain Adaptation Using Soft-Labeled Contrastive Learning for Cardiac Image Segmentation</a><br>
-              M. Gu, M. Thies, <strong>Siyuan Mei</strong>, F. Wagner, M. Fan, Y. Sun, et al. <em>MICCAI</em>, 2024.
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/2410.18731" target="_blank" class="pub-title-link">No-new-denoiser: A
-                critical analysis of diffusion models for medical image denoising</a><br>
-              L. Pfaff, F. Wagner, N. Vysotskaya, M. Thies, N. Maul, <strong>Siyuan Mei</strong>, et al.
-              <em>MICCAI</em>, 2024.
-            </li>
-            <li>
-              <a href="https://doi.org/10.1109/TMI.2024.3474250" target="_blank" class="pub-title-link">A gradient-based
-                approach to fast and accurate head motion compensation in cone-beam CT</a><br>
-              M. Thies, F. Wagner, N. Maul, H. Yu, ..., <strong>Siyuan Mei</strong>, et al. <em>TMI</em>, 2024.
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/2404.03541" target="_blank" class="pub-title-link">Segmentation-Guided Knee
-                Radiograph Generation using Conditional Diffusion Models</a><br>
-              <strong>Siyuan Mei</strong>, F. Fan, F. Wagner, M. Thies, M. Gu, Y. Sun, A. Maier. <em>8th CT
-                Meeting</em>, 2024.
-            </li>
-          </ul>
-        </div>
+        <section id="experience" class="section">
+          <h2>Experience</h2>
+          <div id="experience-content" class="entry-list"></div>
+        </section>
 
-        <div class="pub-year-group">
-          <h3 class="pub-year">2023</h3>
-          <ul class="pub-ul">
-            <li>
-              <a href="https://doi.org/10.1109/ISBI53787.2023.10230638" target="_blank" class="pub-title-link">Metal
-                Inpainting in CBCT Projections Using Score-based Generative Model</a><br>
-              <strong>Siyuan Mei</strong>, F. Fan, A. Maier. <em>IEEE ISBI</em>, 2023.
-            </li>
-          </ul>
-        </div>
+        <section id="awards" class="section">
+          <h2>Awards & Honors</h2>
+          <ul id="awards-content" class="simple-list"></ul>
+        </section>
+
+        <section id="service" class="section">
+          <h2>Service</h2>
+          <div id="service-content" class="prose"></div>
+        </section>
+      </main>
+
+    <footer class="site-footer">
+      <div class="footer-widgets">
+        <section id="visitor-map" class="footer-widget visitor-map-widget" aria-labelledby="visitor-map-title">
+          <div class="footer-widget-heading">
+            <h2 id="visitor-map-title">Visitor map</h2>
+            <span class="footer-widget-kicker">MapMyVisitors</span>
+          </div>
+          <div class="visitor-map-embed">
+            <script
+              type="text/javascript"
+              id="mapmyvisitors"
+              src="https://mapmyvisitors.com/map.js?d=pVchaq674m6ad8iLJiBY3vg6yezF8zAhUsf58ye61h0&amp;cl=ffffff&amp;w=a"
+            ></script>
+            <noscript>
+              <a href="https://mapmyvisitors.com/web/1c7mm" title="View visitor map" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://mapmyvisitors.com/map.png?d=pVchaq674m6ad8iLJiBY3vg6yezF8zAhUsf58ye61h0&amp;cl=ffffff"
+                  alt="Map showing approximate visitor locations"
+                  loading="lazy"
+                >
+              </a>
+            </noscript>
+          </div>
+          <p class="footer-widget-note">Approximate visitor locations.</p>
+        </section>
       </div>
 
-    </div>
-  </section>
+      <p class="footer-meta">
+        <span id="footer-name">Siyuan Mei</span> <span id="footer-year"></span>.
+        Last updated <span id="footer-updated">August 2026</span>.
+        Adapted from <a href="https://github.com/lanqz7766/lanqz7766.github.io" target="_blank" rel="noreferrer">lanqz7766/lanqz7766.github.io</a>.
+      </p>
+    </footer>
 
-  <section id="teaching" class="section">
-    <div class="container">
-      <h2 class="section-title">Teaching</h2>
-      <ul class="pub-ul">
-        <li><strong>Flat-panel CT Reconstruction</strong> – 24/25/26SS</li>
-        <li><strong>Vibe Coding: Introduction for Software Engineering</strong> – 26SS</li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- <footer class="footer">
-    <p>&copy; 2025 Siyuan Mei. Built with <i class="fas fa-heart"></i> and Academic Rigor.</p>
-  </footer> -->
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="data/content.js?v=20260826"></script>
+    <script src="script.js?v=20260826"></script>
+  </body>
 </html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Publication thumbnail placeholder">
+  <rect width="960" height="600" fill="#eef2f6"/>
+  <rect x="110" y="110" width="740" height="380" rx="16" fill="#ffffff" stroke="#cad5dd"/>
+  <path d="M180 410 300 260l95 94 142-185 243 241" fill="none" stroke="#1f6f8b" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5f6b78">Publication Image</text>
+</svg>

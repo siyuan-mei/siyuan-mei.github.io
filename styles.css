@@ -1,0 +1,879 @@
+:root {
+  --bg: #ffffff;
+  --text: #202124;
+  --muted: #555f6b;
+  --soft: #747b84;
+  --line: #d8dde3;
+  --line-soft: #edf0f3;
+  --link: #1772a8;
+  --link-hover: #0e4f78;
+  --tint: #f6fafc;
+  --content-width: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.52;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: absolute;
+  top: -44px;
+  left: 14px;
+  padding: 7px 10px;
+  background: #111;
+  color: #fff;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  width: min(var(--content-width), calc(100% - 42px));
+  margin: 0 auto;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.nav-list a {
+  color: #333940;
+}
+
+.nav-list a.is-active {
+  color: var(--link-hover);
+  font-weight: 700;
+}
+
+.content,
+.site-footer {
+  width: min(var(--content-width), calc(100% - 42px));
+  margin: 0 auto;
+}
+
+.home-section {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+  padding: 34px 0 30px;
+  scroll-margin-top: 20px;
+}
+
+.avatar {
+  display: block;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.profile-line {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.prose p {
+  margin: 0 0 10px;
+}
+
+.collaboration-line {
+  margin: 15px 0 12px;
+  padding: 12px 14px;
+  border: 1px solid #cddde6;
+  border-left: 4px solid #367b9f;
+  border-radius: 4px;
+  background: #f7fafc;
+  color: #354f5f;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 13px 0 0;
+  color: var(--soft);
+}
+
+.profile-links a,
+.email-link,
+.pub-links a,
+.subtle-link {
+  color: var(--link);
+  font-size: 15px;
+}
+
+.icon-link,
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.inline-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+  vertical-align: -3px;
+}
+
+.inline-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.wechat-contact {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.wechat-trigger {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--link);
+  font: inherit;
+  font-size: 15px;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.wechat-trigger:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.wechat-trigger:focus-visible,
+.wechat-close:focus-visible,
+.wechat-image-link:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}
+
+.wechat-trigger:active {
+  transform: translateY(1px);
+}
+
+.wechat-qr-card {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 4;
+  display: block;
+  width: min(280px, calc(100vw - 34px));
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(25, 49, 68, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+}
+
+.wechat-qr-card::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 24px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.wechat-contact:hover .wechat-qr-card,
+.wechat-contact.is-open .wechat-qr-card {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.wechat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.wechat-close {
+  display: inline-grid;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: #f1f4f6;
+  color: #46515c;
+  font: inherit;
+  font-size: 21px;
+  line-height: 1;
+  place-items: center;
+  cursor: pointer;
+}
+
+.wechat-close:hover {
+  background: #e5eaee;
+}
+
+.wechat-image-link,
+.wechat-image-link img {
+  display: block;
+  width: 100%;
+}
+
+.wechat-image-link {
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.wechat-image-link img {
+  height: auto;
+}
+
+.wechat-qr-card small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.slash-separator {
+  display: inline-block;
+  margin: 0 8px;
+  color: var(--soft);
+}
+
+.section {
+  padding: 10px 0 28px;
+  scroll-margin-top: 88px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 20px 0 8px;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+  margin-bottom: 12px;
+}
+
+.section-heading-row h2 {
+  border-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.subtle-link {
+  white-space: nowrap;
+}
+
+.timeline {
+  display: block;
+}
+
+.year-block {
+  margin: 0 0 12px;
+}
+
+.year-label {
+  margin: 6px 0 4px;
+  font-weight: 700;
+}
+
+.news-list,
+.simple-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.news-list li,
+.simple-list li {
+  margin-bottom: 4px;
+}
+
+.news-emphasis {
+  color: #aa1f1f;
+  font-weight: 700;
+}
+
+.news-emphasis a {
+  color: inherit;
+}
+
+.news-archive {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 320ms ease, opacity 220ms ease;
+}
+
+.news-archive.is-open {
+  opacity: 1;
+}
+
+.news-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 8px 0 0;
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  color: var(--link);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.news-toggle:hover {
+  border-bottom-color: currentColor;
+  color: var(--link-hover);
+}
+
+.news-toggle:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+}
+
+.news-toggle-arrow {
+  display: inline-block;
+  transition: transform 220ms ease;
+}
+
+.news-toggle[aria-expanded="true"] .news-toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.date-tag {
+  color: #333940;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 14px;
+}
+
+.research-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
+  margin-top: 8px;
+}
+
+.research-section h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.research-item {
+  min-height: 82px;
+  padding: 12px 14px 11px;
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  background: #fafcfd;
+}
+
+.research-item h3 {
+  margin: 0 0 3px;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.research-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.36;
+}
+
+.research-papers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 0;
+  margin-top: 8px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.research-paper-link {
+  white-space: nowrap;
+}
+
+.research-paper-link:not(:last-child)::after {
+  content: "·";
+  margin: 0 7px;
+  color: #a5adb5;
+}
+
+.publication-list {
+  display: block;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.publication:first-child {
+  padding-top: 4px;
+}
+
+.pub-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9dee4;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.08);
+}
+
+.pub-title {
+  margin: 3px 0 5px;
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pub-authors,
+.pub-venue,
+.pub-note,
+.pub-contribution {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.42;
+}
+
+.pub-authors strong {
+  color: var(--text);
+}
+
+.pub-note {
+  color: #b32020;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pub-contribution {
+  display: inline-block;
+  margin: 2px 0 5px;
+  padding: 2px 7px;
+  border: 1px solid #cadce7;
+  border-radius: 4px;
+  background: #f5fafc;
+  color: #1d5674;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 6px;
+}
+
+.pub-links a:not(:last-child)::after {
+  content: "/";
+  margin: 0 8px;
+  color: var(--soft);
+}
+
+.subsection-title {
+  margin-top: 24px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.compact-list {
+  margin: 6px 0 0;
+  padding-left: 22px;
+}
+
+.compact-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.compact-publication {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  margin: 10px 0 12px;
+}
+
+.compact-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9dee4;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.08);
+}
+
+.compact-title {
+  display: inline;
+  font-weight: 400;
+}
+
+.compact-meta {
+  display: inline;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.compact-title + .compact-meta::before {
+  content: ". ";
+}
+
+.compact-links {
+  display: inline;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+.compact-links a:not(:last-child)::after {
+  content: "/";
+  margin: 0 8px;
+  color: var(--soft);
+}
+
+.entry-list {
+  display: block;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.entry-main {
+  display: block;
+}
+
+.entry-main:has(.entry-logo) {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.entry-logo {
+  display: block;
+  width: 78px;
+  height: 56px;
+  padding: 5px;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.entry-copy {
+  min-width: 0;
+}
+
+.entry-period {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.entry h3 {
+  margin: 0 0 3px;
+  font-size: 17px;
+}
+
+.entry p {
+  margin: 0 0 3px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.entry .entry-summary {
+  margin-top: 7px;
+  color: #43515e;
+  font-size: 14px;
+}
+
+#service-content h3 {
+  margin-top: 14px;
+}
+
+.site-footer {
+  padding: 18px 0 36px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-widgets {
+  margin-bottom: 16px;
+}
+
+.visitor-map-widget {
+  width: 100%;
+  max-width: 280px;
+}
+
+.footer-widget {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  background: #fafcfd;
+}
+
+.footer-widget-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 11px;
+}
+
+.footer-widget h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 15px;
+}
+
+.footer-widget-kicker {
+  color: var(--soft);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.visitor-map-embed {
+  min-height: 150px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #edf3f7;
+}
+
+.visitor-map-embed #mapmyvisitors-widget {
+  max-width: 100% !important;
+}
+
+.visitor-map-embed noscript,
+.visitor-map-embed noscript a,
+.visitor-map-embed noscript img {
+  display: block;
+}
+
+.visitor-map-embed noscript img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-widget-note {
+  margin: 7px 0 0;
+  color: var(--soft);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.footer-meta {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+
+  .nav-list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-section {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .avatar {
+    width: 190px;
+    height: 190px;
+  }
+
+  .research-item,
+  .publication,
+  .compact-publication,
+  .entry {
+    grid-template-columns: 1fr;
+  }
+
+  .research-list {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-main {
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .entry-logo {
+    width: 68px;
+    height: 50px;
+  }
+
+  .publication {
+    gap: 10px;
+  }
+
+  .pub-image {
+    max-width: 360px;
+  }
+
+  .compact-image {
+    max-width: 300px;
+  }
+
+  .visitor-map-widget {
+    max-width: 280px;
+  }
+
+  .visitor-map-embed {
+    min-height: 150px;
+  }
+
+  .wechat-qr-card {
+    position: fixed;
+    top: 50%;
+    right: auto;
+    left: 50%;
+    max-height: 86dvh;
+    overflow-y: auto;
+    transform: translate(-50%, calc(-50% - 5px));
+  }
+
+  .wechat-contact:hover .wechat-qr-card,
+  .wechat-contact.is-open .wechat-qr-card {
+    transform: translate(-50%, -50%);
+  }
+
+  .wechat-qr-card::before {
+    display: none;
+  }
+}
