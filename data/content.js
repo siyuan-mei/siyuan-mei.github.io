@@ -29,6 +29,7 @@ window.SITE_CONTENT = {
     "Pattern Recognition": "https://lme.tf.fau.de/",
     "Peking University Health Science Center": "https://www.bjmu.edu.cn/",
     "AIMI Lab": "https://pkuaimi.com/",
+    "Andreas Maier": "https://scholar.google.com/citations?user=MA6SDuEAAAAJ&hl",
     "Yixing Huang": "https://pkuaimi.com/people/",
     "MICCAI 2026": "https://conferences.miccai.org/2026/en/",
     "MICCAI MIART Workshop 2026": "https://miart-workshop.github.io/",
