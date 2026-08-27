@@ -97,7 +97,7 @@ window.SITE_CONTENT = {
       year: "2025",
       items: [
         {
-          date: "Nov",
+          date: "Aug",
           text: "Won 1st place in Task 2 and 4th place in Task 1 of the MICCAI SynthRAD2025 Challenge.",
           highlightText: "1st place in Task 2 and 4th place in Task 1"
         }
@@ -171,6 +171,7 @@ window.SITE_CONTENT = {
       venue: "MICCAI 2026",
       contribution: "Co-author",
       note: "Oral Presentation",
+      image: "assets/img/speech-guided.png",
       links: [{ label: "Paper", url: "https://arxiv.org/abs/2605.18466" }]
     },
     {
@@ -179,6 +180,7 @@ window.SITE_CONTENT = {
       venue: "IEEE ISBI 2023",
       contribution: "First author",
       note: "Conference paper",
+      image: "assets/img/metal-inpainting.png",
       links: [{ label: "Paper", url: "https://doi.org/10.1109/ISBI53787.2023.10230638" }]
     },
     {
@@ -187,6 +189,7 @@ window.SITE_CONTENT = {
       venue: "IEEE Transactions on Medical Imaging (2024)",
       contribution: "Co-author",
       note: "Journal article",
+      image: "assets/img/tmi-motion.png",
       links: [{ label: "Paper", url: "https://doi.org/10.1109/TMI.2024.3474250" }]
     }
   ],

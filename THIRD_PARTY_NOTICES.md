@@ -6,7 +6,7 @@ The layout and interaction patterns are adapted from [lanqz7766/lanqz7766.github
 
 ## Visitor map
 
-The footer currently shows a neutral placeholder illustration. A new site-specific MapMyVisitors widget can be activated from the footer link when the account-owned embed is available.
+The footer uses the site-specific MapMyVisitors embed configured in `index.html`. The widget is supplied by MapMyVisitors and may load asynchronously.
 
 ## Publication previews
 

@@ -5,7 +5,7 @@ This note records the local workflow for editing the homepage and rebuilding the
 ## 1. Edit the content
 
 - Homepage text, publication links, news, awards, and experience: `data/content.js`
-- Homepage layout and visitor-map placeholder: `index.html`, `styles.css`
+- Homepage layout and visitor-map embed: `index.html`, `styles.css`
 - English CV source: `..\\cv\\main.tex`
 - Chinese CV source: `..\\cv\\main_zh.tex`
 - Photo: `..\\cv\\picture.jpg`
@@ -61,7 +61,7 @@ Push-Location '.\\profile_update\\site'
 python -m http.server 8027
 ```
 
-Open `http://127.0.0.1:8027/` and check the responsive layout, social links, publication cards, visitor-map placeholder, and both CV downloads. Stop the server with `Ctrl+C`, then run `Pop-Location`.
+Open `http://127.0.0.1:8027/` and check the responsive layout, social links, publication cards, MapMyVisitors widget, and both CV downloads. Stop the server with `Ctrl+C`, then run `Pop-Location`.
 
 ## 5. Commit and publish with Git
 
@@ -70,7 +70,7 @@ From `profile_update\\site`:
 ```powershell
 git status
 git diff --check
-git add README.md THIRD_PARTY_NOTICES.md CV_MAINTENANCE.md data/content.js index.html styles.css assets/files/curriculum_vitae.pdf assets/files/curriculum_vitae_zh.pdf assets/img/visitor-map-reset.svg
+git add README.md THIRD_PARTY_NOTICES.md CV_MAINTENANCE.md data/content.js index.html styles.css assets/files/curriculum_vitae.pdf assets/files/curriculum_vitae_zh.pdf assets/img/speech-guided.png assets/img/metal-inpainting.png assets/img/tmi-motion.png
 git commit -m "Describe the homepage update"
 git push origin main
 ```
