@@ -24,22 +24,22 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0001133557705102" />
-      <entry key="S2" value="1.2492792739701144" />
-      <entry key="S5" value="2.389219745253202" />
-      <entry key="S10" value="3.5780131692074146" />
-      <entry key="S30" value="4.985158465079988" />
-      <entry key="S60" value="5.460102992220702" />
-      <entry key="M2" value="5.721327045204786" />
-      <entry key="M5" value="5.886353602494375" />
-      <entry key="M10" value="5.942806725491367" />
-      <entry key="M15" value="5.961788367839605" />
-      <entry key="M30" value="5.980852655877839" />
-      <entry key="H1" value="5.990415920190086" />
-      <entry key="H2" value="5.995205354932752" />
-      <entry key="H4" value="5.9976020257721805" />
-      <entry key="D1" value="5.999600247081331" />
-      <entry key="W1" value="5.999942890222256" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0000000003518619" />
+      <entry key="M2" value="1.0000459285198173" />
+      <entry key="M5" value="1.05391140092974" />
+      <entry key="M10" value="1.568733409752341" />
+      <entry key="M15" value="2.2473489871404375" />
+      <entry key="M30" value="3.7357021703318587" />
+      <entry key="H1" value="5.0514439290078474" />
+      <entry key="H2" value="5.930381119003182" />
+      <entry key="H4" value="6.4389599200248" />
+      <entry key="D1" value="6.902627135034469" />
+      <entry key="W1" value="6.985991856992675" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -61,23 +61,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9075191553171609" />
-      <entry key="MS500" value="0.9808899723320301" />
-      <entry key="S2" value="1.2428520007154098" />
-      <entry key="S5" value="2.3817241934501814" />
-      <entry key="S10" value="3.5702071013543164" />
-      <entry key="S30" value="4.980460300225067" />
-      <entry key="S60" value="5.457351420789142" />
-      <entry key="M2" value="5.71983600999721" />
-      <entry key="M5" value="5.88572743260874" />
-      <entry key="M10" value="5.942488496381943" />
-      <entry key="M15" value="5.961575057877314" />
-      <entry key="M30" value="5.980745418729273" />
-      <entry key="H1" value="5.99036215540364" />
-      <entry key="H2" value="5.995178435902388" />
-      <entry key="H4" value="5.997588557087181" />
-      <entry key="D1" value="5.999598001026018" />
-      <entry key="W1" value="5.999942569325988" />
+      <entry key="MS100" value="0.6372803136596311" />
+      <entry key="MS500" value="0.9138314502294005" />
+      <entry key="S2" value="0.9777245612102328" />
+      <entry key="S5" value="0.9910295632640791" />
+      <entry key="S10" value="0.995504677670617" />
+      <entry key="S30" value="0.998499308274441" />
+      <entry key="S60" value="0.9992493727680203" />
+      <entry key="M2" value="0.9996705323018853" />
+      <entry key="M5" value="1.0537554954094577" />
+      <entry key="M10" value="1.5686278667368045" />
+      <entry key="M15" value="2.247254298208148" />
+      <entry key="M30" value="3.7356280889797344" />
+      <entry key="H1" value="5.051395051676007" />
+      <entry key="H2" value="5.930352723573668" />
+      <entry key="H4" value="6.4389445770858185" />
+      <entry key="D1" value="6.90262440381798" />
+      <entry key="W1" value="6.985991462347571" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -126,7 +126,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787797857927</updated>
-      <workItem from="1787797860353" duration="2796000" />
+      <workItem from="1787797860353" duration="3639000" />
     </task>
     <servers />
   </component>
