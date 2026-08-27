@@ -19,8 +19,8 @@ window.SITE_CONTENT = {
       { label: "GitHub", url: "https://github.com/siyuan-mei" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/siyuan-mei-409353247/" },
       { label: "Homepage", url: "https://lme.tf.fau.de/persons/siyuan-mei/" },
-      { label: "CV", url: "assets/files/curriculum_vitae.pdf" },
-      { label: "CV (中文)", url: "assets/files/curriculum_vitae_zh.pdf" }
+      { label: "CV", url: "assets/files/cv_siyuan_en.pdf" },
+      { label: "CV (中文)", url: "assets/files/cv_siyuan_cn.pdf" }
     ]
   },
 
