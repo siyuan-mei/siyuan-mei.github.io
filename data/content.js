@@ -19,7 +19,8 @@ window.SITE_CONTENT = {
       { label: "GitHub", url: "https://github.com/siyuan-mei" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/siyuan-mei-409353247/" },
       { label: "Homepage", url: "https://lme.tf.fau.de/persons/siyuan-mei/" },
-      { label: "CV", url: "assets/files/curriculum_vitae.pdf" }
+      { label: "CV", url: "assets/files/curriculum_vitae.pdf" },
+      { label: "CV (中文)", url: "assets/files/curriculum_vitae_zh.pdf" }
     ]
   },
 
@@ -43,7 +44,7 @@ window.SITE_CONTENT = {
     "I also explore diffusion and flow-matching models, representation learning, vibe coding with LLMs, and practical agentic systems. I am currently visiting the AIMI Lab at Peking University Health Science Center with Prof. Yixing Huang."
   ],
 
-  collaboration: "I am open to research conversations and collaborations in medical imaging, computer vision, and LLM-assisted software engineering.",
+  collaboration: "I am open to research conversations and collaborations in medical imaging, computer vision, and LLM-assisted software engineering. I also welcome job-related conversations and appreciate hearing about suitable opportunities.",
 
   researchInterests: [
     {
@@ -67,7 +68,7 @@ window.SITE_CONTENT = {
     {
       title: "Vibe Coding",
       text: "Software engineering workflows with LLMs and reproducible research tooling.",
-      papers: [{ label: "Vibe Coding Slides", url: "https://github.com/PRLab-FAU/VibeCodingSlides" }]
+      papers: [{ label: "Vibe Coding lecture slides · Springer book", url: "https://github.com/PRLab-FAU/VibeCodingSlides" }]
     },
     {
       title: "LLMs & Agents",
@@ -102,7 +103,10 @@ window.SITE_CONTENT = {
       contribution: "First author",
       note: "Early Accept · Oral Presentation",
       image: "assets/img/time-matters.png",
-      links: [{ label: "Code", url: "https://github.com/siyuan-mei/JiR" }]
+      links: [
+        { label: "Paper", url: "https://github.com/siyuan-mei/JiR#citation" },
+        { label: "Code", url: "https://github.com/siyuan-mei/JiR" }
+      ]
     },
     {
       title: "Detail Consistent Stage-Wise Distillation for Efficient 3D MRI Segmentation",
@@ -123,7 +127,10 @@ window.SITE_CONTENT = {
       contribution: "First author",
       note: "Accepted workshop paper",
       image: "assets/img/wing.png",
-      links: [{ label: "Code", url: "https://github.com/siyuan-mei/WING" }]
+      links: [
+        { label: "Paper", url: "https://arxiv.org/abs/2607.06234" },
+        { label: "Code", url: "https://github.com/siyuan-mei/WING" }
+      ]
     },
     {
       title: "Vision Transformer Hook for Dense Predictions",
@@ -132,7 +139,10 @@ window.SITE_CONTENT = {
       contribution: "First author",
       note: "Journal article",
       image: "assets/img/vithook.png",
-      links: [{ label: "DOI", url: "https://doi.org/10.1016/j.patcog.2026.113818" }]
+      links: [
+        { label: "Paper", url: "https://doi.org/10.1016/j.patcog.2026.113818" },
+        { label: "Code", url: "https://github.com/siyuan-mei/ViT-Hook" }
+      ]
     },
     {
       title: "BigReg: An Efficient Registration Pipeline for High-Resolution X-Ray and Light-Sheet Fluorescence Microscopy",
@@ -142,9 +152,32 @@ window.SITE_CONTENT = {
       note: "Featured Paper",
       image: "assets/img/bigreg.png",
       links: [
-        { label: "DOI", url: "https://doi.org/10.1117/1.JMI.12.5.054004" },
-        { label: "arXiv", url: "https://arxiv.org/abs/2404.14807" }
+        { label: "Paper", url: "https://doi.org/10.1117/1.JMI.12.5.054004" }
       ]
+    },
+    {
+      title: "Speech-Guided Multimodal Learning for Vocal Tract Segmentation in Real-Time MRI",
+      authors: "Daiqi Liu, Lukas Mulzer, Md Hasan, Nyvenn de Castro, Fangxu Xing, Xingjian Kang, Chengze Ye, Siyuan Mei, Yipeng Sun, Tomás Arias-Vergara, Jana Hutter, Jonghye Woo, Andreas Maier, Paula Andrea Pérez-Toro",
+      venue: "MICCAI 2026",
+      contribution: "Co-author",
+      note: "Oral Presentation",
+      links: [{ label: "Paper", url: "https://arxiv.org/abs/2605.18466" }]
+    },
+    {
+      title: "Metal Inpainting in CBCT Projections Using Score-based Generative Model",
+      authors: "Siyuan Mei, Fuxin Fan, Andreas Maier",
+      venue: "IEEE ISBI 2023",
+      contribution: "First author",
+      note: "Conference paper",
+      links: [{ label: "Paper", url: "https://doi.org/10.1109/ISBI53787.2023.10230638" }]
+    },
+    {
+      title: "A Gradient-Based Approach to Fast and Accurate Head Motion Compensation in Cone-Beam CT",
+      authors: "Mareike Thies, Fabian Wagner, Noah Maul, Haijun Yu, Manuela Goldmann, Linda-Sophie Schneider, Mingxuan Gu, Siyuan Mei, Lukas Folle, Alexander Preuhs, Michael Manhart, Andreas Maier",
+      venue: "IEEE Transactions on Medical Imaging (2024)",
+      contribution: "Co-author",
+      note: "Journal article",
+      links: [{ label: "Paper", url: "https://doi.org/10.1109/TMI.2024.3474250" }]
     }
   ],
 
@@ -153,34 +186,28 @@ window.SITE_CONTENT = {
       year: "2026",
       items: [
         {
-          title: "Speech-Guided Multimodal Learning for Vocal Tract Segmentation in Real-Time MRI",
-          authors: "Daiqi Liu, Lukas Mulzer, Md Hasan, Nyvenn de Castro, Fangxu Xing, Xingjian Kang, Chengze Ye, Siyuan Mei, Yipeng Sun, Tomás Arias-Vergara, Jana Hutter, Jonghye Woo, Andreas Maier, Paula Andrea Pérez-Toro",
-          venue: "MICCAI 2026 · Oral Presentation",
-          links: [{ label: "arXiv", url: "https://arxiv.org/abs/2605.18466" }]
-        },
-        {
           title: "TCCT: Trajectory-Conditioned CBCT Reconstruction for Sinusoidal Non-Circular Orbits with a Fourier Neural Operator",
           authors: "Siyuan Mei · co-author",
-          venue: "MICCAI 2026 BIC-MAC Challenge · Poster",
+          venue: "MICCAI 2026 · Poster",
           links: []
         },
         {
           title: "Filter2Noise: A Framework for Interpretable and Zero-Shot Low-Dose CT Image Denoising",
           authors: "Yipeng Sun, Siyuan Mei, et al.",
           venue: "Journal of Medical Imaging 13(2), 024004",
-          links: [{ label: "DOI", url: "https://doi.org/10.1117/1.JMI.13.2.024004" }]
+          links: [{ label: "Paper", url: "https://doi.org/10.1117/1.JMI.13.2.024004" }]
         },
         {
           title: "Robustness and Stability Analysis of Differentiable Shift-Variant FBP for Cone-Beam CT under Challenging Acquisition Settings",
           authors: "Chengze Ye, Siyuan Mei, et al.",
           venue: "Machine Learning for Biomedical Imaging (2026)",
-          links: [{ label: "DOI", url: "https://doi.org/10.59275/j.melba.2026-252c" }]
+          links: [{ label: "Paper", url: "https://doi.org/10.59275/j.melba.2026-252c" }]
         },
         {
           title: "Analyzing and Adapting Diffusion Segmentation Behavior under Distribution Shifts",
           authors: "Siyuan Mei, et al.",
           venue: "Biomedical Signal Processing and Control 112 (2026), 108619",
-          links: [{ label: "DOI", url: "https://doi.org/10.1016/j.bspc.2025.108619" }]
+          links: [{ label: "Paper", url: "https://doi.org/10.1016/j.bspc.2025.108619" }]
         }
       ]
     },
@@ -188,16 +215,10 @@ window.SITE_CONTENT = {
       year: "2025",
       items: [
         {
-          title: "A Gradient-Based Approach to Fast and Accurate Head Motion Compensation in Cone-Beam CT",
-          authors: "Mareike Thies, Fabian Wagner, Noah Maul, Haijun Yu, Manuela Goldmann, Linda-Sophie Schneider, Mingxuan Gu, Siyuan Mei, Lukas Folle, Alexander Preuhs, Michael Manhart, Andreas Maier",
-          venue: "IEEE Transactions on Medical Imaging",
-          links: [{ label: "DOI", url: "https://doi.org/10.1109/TMI.2024.3474250" }]
-        },
-        {
           title: "DRACO: Differentiable Reconstruction for Arbitrary CBCT Orbits",
           authors: "Chengze Ye, Siyuan Mei, et al.",
           venue: "Physics in Medicine and Biology 70 (2025), 075005",
-          links: [{ label: "DOI", url: "https://doi.org/10.1088/1361-6560/adbb50" }]
+          links: [{ label: "Paper", url: "https://doi.org/10.1088/1361-6560/adbb50" }]
         }
       ]
     },
@@ -208,19 +229,19 @@ window.SITE_CONTENT = {
           title: "Unsupervised Domain Adaptation Using Soft-Labeled Contrastive Learning with Reversed Monte Carlo Method for Cardiac Image Segmentation",
           authors: "Mingxuan Gu, Mareike Thies, Siyuan Mei, Fabian Wagner, Mingcheng Fan, Yipeng Sun, Zhaoya Pan, Sulaiman Vesal, Ronak Kosti, Dennis Possart, Jonas Utz, Andreas Maier",
           venue: "MICCAI 2024",
-          links: [{ label: "DOI", url: "https://doi.org/10.1007/978-3-031-72114-4_65" }]
+          links: [{ label: "Paper", url: "https://doi.org/10.1007/978-3-031-72114-4_65" }]
         },
         {
           title: "No-New-Denoiser: A Critical Analysis of Diffusion Models for Medical Image Denoising",
           authors: "Laura Pfaff, Fabian Wagner, Nastassia Vysotskaya, Mareike Thies, Noah Maul, Siyuan Mei, Tobias Würfl, Andreas Maier",
           venue: "MICCAI 2024",
-          links: [{ label: "Open access", url: "https://papers.miccai.org/miccai-2024/567-Paper2146.html" }]
+          links: [{ label: "Paper", url: "https://papers.miccai.org/miccai-2024/567-Paper2146.html" }]
         },
         {
           title: "Generative Drifting for Conditional Medical Image Generation",
           authors: "Zirong Li, Siyuan Mei, Weiwen Wu, Andreas Maier, Lina Gölz, Yan Xia",
           venue: "arXiv preprint (2026)",
-          links: [{ label: "arXiv", url: "https://arxiv.org/abs/2604.19736" }]
+          links: [{ label: "Paper", url: "https://arxiv.org/abs/2604.19736" }]
         }
       ]
     }
@@ -253,7 +274,7 @@ window.SITE_CONTENT = {
       organization: "Zhejiang University of Science and Technology",
       period: "2016 - 2020",
       location: "Hangzhou, China",
-      detail: ""
+      detail: "B.Eng. in Automation; Sino-German 2+3 Program."
     }
   ],
 
@@ -264,7 +285,7 @@ window.SITE_CONTENT = {
       period: "2023 - 2027",
       location: "Erlangen, Germany",
       detail: "Supervisor: Prof. Andreas Maier.",
-      summary: "Fully funded through the ERC 4D Nanoscope project. Research on registration, medical AI, computer vision, foundation-model adaptation, GANs, diffusion and flow-matching models; teaching Flat-panel CT Reconstruction and Vibe Coding: Software Engineering with LLMs."
+      summary: "Fully funded through the ERC 4D Nanoscope project; developed BigReg for multimodal microscopy registration. Research on medical AI, computer vision, foundation-model adaptation, and medical image generation with GANs, diffusion, and flow-matching models. Teaching Flat-panel CT Reconstruction and Vibe Coding lecture slides with the Springer book."
     },
     {
       title: "Visiting Scholar",
@@ -272,7 +293,7 @@ window.SITE_CONTENT = {
       period: "May - Oct. 2026",
       location: "Beijing, China",
       detail: "Supervisor: Prof. Yixing Huang. 240 Pathology Building, No. 38 Xueyuan Road, Haidian District, Beijing, China.",
-      summary: "Participated in the MICCAI BIC-MAC Challenge and trained a multimodal-to-CT generative model for PET attenuation correction; ranked first on the validation-set CT metric. Received training in clinical CT applications and workflows, visited the ICT Center in Chongqing, and attended MISC 2026 at Tsinghua University."
+      summary: "Participated in the MICCAI BIC-MAC Challenge by training a multimodal-to-CT generative model for PET attenuation correction; ranked first on the validation-set CT metric. Built clinical CT application knowledge, visited the ICT Center in Chongqing, and attended MISC 2026 at Tsinghua University."
     }
   ],
 

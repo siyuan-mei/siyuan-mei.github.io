@@ -6,7 +6,7 @@ The layout and interaction patterns are adapted from [lanqz7766/lanqz7766.github
 
 ## Visitor map
 
-The footer visitor-map widget is provided by [MapMyVisitors](https://mapmyvisitors.com/). It displays approximate visitor locations and is loaded only by the embedded third-party script.
+The footer currently shows a neutral placeholder illustration. A new site-specific MapMyVisitors widget can be activated from the footer link when the account-owned embed is available.
 
 ## Publication previews
 

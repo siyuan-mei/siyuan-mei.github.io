@@ -18,5 +18,6 @@ Then open `http://localhost:8000/` in a browser. The page has no build step and 
 - Put images in `assets/img/` and files such as the CV in `assets/files/`.
 - Keep links to public paper pages, DOI records, arXiv entries, or project repositories.
 - Use `python -m http.server` before publishing to check image paths, PDF links, and responsive layout.
+- The footer visitor map is a site-specific placeholder until a new counter is activated.
 
 The homepage is adapted from [lanqz7766/lanqz7766.github.io](https://github.com/lanqz7766/lanqz7766.github.io); see `THIRD_PARTY_NOTICES.md` for attribution and external services.

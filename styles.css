@@ -757,19 +757,28 @@ h3 {
   background: #edf3f7;
 }
 
-.visitor-map-embed #mapmyvisitors-widget {
-  max-width: 100% !important;
+.visitor-map-reset {
+  min-height: 0;
+  padding: 8px;
+  text-align: center;
 }
 
-.visitor-map-embed noscript,
-.visitor-map-embed noscript a,
-.visitor-map-embed noscript img {
+.visitor-map-reset img {
   display: block;
-}
-
-.visitor-map-embed noscript img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
+}
+
+.visitor-map-reset p {
+  margin: 8px 0 4px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.visitor-map-reset a {
+  font-size: 11px;
 }
 
 .footer-widget-note {

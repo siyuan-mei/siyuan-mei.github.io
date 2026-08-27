@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Blank world map</title>
+  <desc id="desc">A neutral blank world map illustration for a new visitor counter.</desc>
+  <rect width="640" height="300" rx="12" fill="#edf3f7"/>
+  <g fill="#a9c4d5" stroke="#8eafc1" stroke-width="2">
+    <path d="M56 94 82 73l38 2 20 18-9 23-29 3-17 22-25-10-18-20z"/>
+    <path d="M166 157 189 143l23 12 4 29-14 15-1 34-17 22-12-30-15-17 9-24z"/>
+    <path d="M282 77 316 61l44 4 26 18-7 22-28 8-16 27-31-5-16-28z"/>
+    <path d="M352 133 379 118l34 10 19 30-16 21-9 36-27 22-15-26-20-20 8-28z"/>
+    <path d="M467 83 497 69l42 8 24 21-12 22-29 1-22 16-25-20z"/>
+    <path d="M527 156 555 145l31 12 10 27-18 13-19 27-23-15 5-25-16-15z"/>
+  </g>
+  <path d="M32 250h576" stroke="#d4e2ea" stroke-width="2"/>
+</svg>
