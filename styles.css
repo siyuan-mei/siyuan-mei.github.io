@@ -656,6 +656,10 @@ h3 {
   display: block;
 }
 
+.publication--text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .entry-main:has(.entry-logo) {
   display: grid;
   grid-template-columns: 78px minmax(0, 1fr);

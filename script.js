@@ -451,11 +451,13 @@
       const article = document.createElement("article");
       article.className = "publication";
 
-      const image = document.createElement("img");
-      image.className = "pub-image";
-      image.src = pub.image || "assets/img/publication-placeholder.svg";
-      image.alt = `${pub.title} preview`;
-      image.loading = "lazy";
+      const image = pub.image ? document.createElement("img") : null;
+      if (image) {
+        image.className = "pub-image";
+        image.src = pub.image;
+        image.alt = `${pub.title} preview`;
+        image.loading = "lazy";
+      }
 
       const body = document.createElement("div");
       const title = document.createElement("h3");
@@ -493,7 +495,12 @@
         body.append(links);
       }
 
-      article.append(image, body);
+      if (image) {
+        article.append(image);
+      } else {
+        article.classList.add("publication--text-only");
+      }
+      article.append(body);
       target.append(article);
     });
   }

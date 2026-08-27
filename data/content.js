@@ -92,6 +92,16 @@ window.SITE_CONTENT = {
           highlightText: "three early accepts (top 9% among 4,601 submissions), with one Spotlight and two Oral presentations"
         }
       ]
+    },
+    {
+      year: "2025",
+      items: [
+        {
+          date: "Nov",
+          text: "Won 1st place in Task 2 and 4th place in Task 1 of the MICCAI SynthRAD2025 Challenge.",
+          highlightText: "1st place in Task 2 and 4th place in Task 1"
+        }
+      ]
     }
   ],
 
