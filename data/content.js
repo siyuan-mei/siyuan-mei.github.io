@@ -1,5 +1,5 @@
 window.SITE_CONTENT = {
-  siteMeta: { lastUpdated: "August 2026" },
+  siteMeta: { lastUpdated: "Sep 2026" },
 
   profile: {
     name: "Siyuan Mei",
@@ -86,6 +86,7 @@ window.SITE_CONTENT = {
     {
       year: "2026",
       items: [
+        { date: "Sep", text: "My first-author paper received MICCAI 2026 Best Paper Nomination.", highlightText: "MICCAI 2026 Best Paper Nomination" },
         { date: "Aug", text: "One paper was accepted to the MICCAI MIART workshop.", highlightText: "MICCAI MIART workshop" },
         {
           date: "May",
@@ -112,7 +113,7 @@ window.SITE_CONTENT = {
       authors: "Siyuan Mei, Yanteng Zhang, Yan Xia, Qizhen Lan, Yipeng Sun, Siming Bayer, Zirong Li, Chengze Ye, Daiqi Liu, Xiaoqian Jiang, Fuxin Fan, Yixing Huang, Andreas Maier",
       venue: "MICCAI 2026",
       contribution: "First author",
-      note: "Early Accept · Oral Presentation",
+      note: "Early Accept · Oral Presentation · Best Paper Nomination",
       image: "assets/img/time-matters.png",
       links: [
         { label: "Paper", url: "https://github.com/siyuan-mei/JiR#citation" },
@@ -144,6 +145,16 @@ window.SITE_CONTENT = {
       ]
     },
     {
+    title: "Speech-Guided Multimodal Learning for Vocal Tract Segmentation in Real-Time MRI",
+    authors: "Daiqi Liu, Lukas Mulzer, Md Hasan, Nyvenn de Castro, Fangxu Xing, Xingjian Kang, Chengze Ye, Siyuan Mei, Yipeng Sun, Tomás Arias-Vergara, Jana Hutter, Jonghye Woo, Andreas Maier, Paula Andrea Pérez-Toro",
+    venue: "MICCAI 2026",
+    contribution: "Co-author",
+    note: "Early Accept · Oral Presentation",
+    image: "assets/img/speech-guided.png",
+    links: [{ label: "Paper", url: "https://arxiv.org/abs/2605.18466" }]
+    },
+
+    {
       title: "Vision Transformer Hook for Dense Predictions",
       authors: "Siyuan Mei, Fuxin Fan, Yipeng Sun, Yixing Huang, Andreas Maier",
       venue: "Pattern Recognition 179 (2026), 113818",
@@ -166,15 +177,7 @@ window.SITE_CONTENT = {
         { label: "Paper", url: "https://doi.org/10.1117/1.JMI.12.5.054004" }
       ]
     },
-    {
-      title: "Speech-Guided Multimodal Learning for Vocal Tract Segmentation in Real-Time MRI",
-      authors: "Daiqi Liu, Lukas Mulzer, Md Hasan, Nyvenn de Castro, Fangxu Xing, Xingjian Kang, Chengze Ye, Siyuan Mei, Yipeng Sun, Tomás Arias-Vergara, Jana Hutter, Jonghye Woo, Andreas Maier, Paula Andrea Pérez-Toro",
-      venue: "MICCAI 2026",
-      contribution: "Co-author",
-      note: "Oral Presentation",
-      image: "assets/img/speech-guided.png",
-      links: [{ label: "Paper", url: "https://arxiv.org/abs/2605.18466" }]
-    },
+
     {
       title: "Metal Inpainting in CBCT Projections Using Score-based Generative Model",
       authors: "Siyuan Mei, Fuxin Fan, Andreas Maier",
@@ -307,13 +310,14 @@ window.SITE_CONTENT = {
       period: "May - Oct. 2026",
       location: "Beijing, China",
       detail: "Supervisor: Prof. Yixing Huang. 240 Pathology Building, No. 38 Xueyuan Road, Haidian District, Beijing, China.",
-      summary: "Participated in the MICCAI BIC-MAC Challenge by training a multimodal-to-CT generative model for PET attenuation correction; ranked first on the validation-set CT metric. Built clinical CT application knowledge, visited the ICT Center in Chongqing, and attended MISC 2026 at Tsinghua University."
+      summary: "Participated in the MICCAI BIC-MAC Challenge by training a multimodal-to-CT generative model for PET attenuation correction; ranked first on the test-set CT metric. Built clinical CT application knowledge, visited the ICT Center in Chongqing, and attended MISC 2026 at Tsinghua University."
     }
   ],
 
   awards: [
+    "[2026] Nomination of MICCAI 2026 Best Paper and Young Scientist Award.",
     "[2025] 1st place in Task 2 and 4th place in Task 1, MICCAI SynthRAD2025 Challenge.",
-    "[2023 - 2027] Fully funded Ph.D. through the ERC 4D Nanoscope project at FAU."
+    "[2023 - 2026] Fully funded Ph.D. through the ERC 4D Nanoscope project at FAU."
   ],
 
   serviceGroups: [
@@ -321,6 +325,7 @@ window.SITE_CONTENT = {
       title: "Journal Service",
       items: [
         { label: "Pattern Recognition · Reviewer", url: "https://www.sciencedirect.com/journal/pattern-recognition" },
+        { label: "Medical Physics · Reviewer", url: "https://aapm.onlinelibrary.wiley.com/journal/24734209" },
         { label: "Journal of Medical Imaging · Technical Editor", url: "https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging" },
         { label: "Machine Learning for Biomedical Imaging · Reviewer", url: "https://www.melba-journal.org/" }
       ]
